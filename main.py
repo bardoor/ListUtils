@@ -1,6 +1,9 @@
+lst = [1132,22342,3453,4235]
+target = int(input())
 def find_element(lst,target):
-    for i in range(len(lst)):       
+    index = -1
+    for i in range(len(lst)):
         if lst[i] == target:
             index = i  
-            break  
     return index
+print(find_element(lst,target))
