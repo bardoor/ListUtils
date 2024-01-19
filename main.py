@@ -24,6 +24,16 @@ def del_doubles(lst: list) -> list:
         del lst[i - index_smestitel]
         index_smestitel += 1
     return lst
+
+
+def gtr_inique_lst(lst):
+    unique = []
+    for number in lst:
+        if number in unique:
+            continue
+        else:
+            unique.append(number)
+    return unique
 from random import randint
 
 
