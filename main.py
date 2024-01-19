@@ -13,6 +13,8 @@ def random_lst(num: int, from_num: int, to_num: int) -> list:
         for i in range(num):
             lst.append(randint(from_num,to_num))
         return lst
+
+
 def find_element(lst,target):
     index = -1
     for i in range(len(lst)):
@@ -20,3 +22,10 @@ def find_element(lst,target):
             index = i  
     return index
 
+
+def poisk_chs(lst):
+    dup = []
+    for i in lst:
+        if lst.count(i) > 1 and i not in dup:
+            dup.append(i)
+    return dup
